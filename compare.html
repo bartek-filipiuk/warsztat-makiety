@@ -2,5 +2,5 @@
 <style>html,body{margin:0;height:100%;font:14px system-ui,sans-serif;background:#202120;color:#fff}.bar{height:34px;display:flex;align-items:center;gap:16px;padding:0 12px}.bar a{color:#FF650A}.g{display:grid;grid-template-columns:1fr 1fr;gap:4px;height:calc(100% - 34px)}iframe{width:100%;height:100%;border:0;background:#fff}</style></head><body>
 <div class="bar"><a href="./">← wszystkie</a><span id="t"></span><span>lewa: przed · prawa: po</span></div>
 <div class="g"><iframe id="a"></iframe><iframe id="b"></iframe></div>
-<script>const m=(new URLSearchParams(location.search).get('m')||'opus').replace(/[^a-z]/g,'');const ok=['fable','opus','astra'].includes(m)?m:'opus';document.getElementById('t').textContent=ok;document.getElementById('a').src=ok+'/';document.getElementById('b').src=ok+'-v2/';</script>
+<script>const m=(new URLSearchParams(location.search).get('m')||'opus').replace(/[^a-z]/g,'');const ok=['fable','opus','astra','opus3'].includes(m)?m:'opus';document.getElementById('t').textContent=ok;if(ok==='opus3'){document.getElementById('a').src='opus-v2/';document.getElementById('b').src='opus-v3/';}else{document.getElementById('a').src=ok+'/';document.getElementById('b').src=ok+'-v2/';}</script>
 </body></html>
