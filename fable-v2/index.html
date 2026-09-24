@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WARSZTAT Wrocław — Coś stuka? Znajdziemy co.</title>
+<meta name="description" content="Warsztat samochodowy we Wrocławiu. Diagnoza, konkretna wycena i dopiero wtedy naprawa. Umów diagnozę albo poproś o kontakt.">
+<meta name="theme-color" content="#F5F4F0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23FF650A' d='M4 4h9l7 12-7 12H4l7-12z'/%3E%3Cpath fill='%23FF650A' d='M17 4h9l-7 12 7 12h-9l7-12z' opacity='.75'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="img/car-body-1400.avif" type="image/avif" imagesrcset="img/car-body-800.avif 800w, img/car-body-1400.avif 1400w, img/car-body-2000.avif 2000w" imagesizes="(min-width: 900px) 62vw, 100vw">
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
+<div class="header-spacer"></div>
+<header class="site-header" id="top">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top" aria-label="WARSZTAT Wrocław — strona główna">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#FF650A" d="M4 4h9l7 12-7 12H4l7-12z"/><path fill="#FF650A" opacity=".72" d="M17 4h9l-7 12 7 12h-9l7-12z"/></svg>
+      <span class="brand__text"><span class="brand__name">WARSZTAT</span><span class="brand__city">WROCŁAW</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Główna">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="menu-toggle__bars" aria-hidden="true"></span><span class="menu-toggle__label">Menu</span></button>
+      <a class="btn btn--ghost btn--sm site-nav__mobile-cta" href="#umow-wizyte">Umów</a>
+      <div class="site-nav__panel" id="menu">
+        <ul class="site-nav__list">
+          <li><a href="#uslugi">Usługi</a></li>
+          <li><a href="#jak-pracujemy">Jak pracujemy</a></li>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li class="site-nav__cta"><a class="btn btn--ghost" href="#umow-wizyte">Umów wizytę <span class="arr" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== HERO / SKANER ========== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap grid hero__grid">
+    <div class="hero__copy col-copy reveal">
+      <p class="eyebrow">Dobra diagnoza. Spokojna głowa.</p>
+      <h1 class="hero__title" id="hero-title">Coś stuka?<br>Znajdziemy co.</h1>
+      <p class="hero__lead">Diagnoza, konkretna wycena i&nbsp;dopiero wtedy naprawa.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#umow-wizyte">Umów diagnozę <span class="arr" aria-hidden="true">↗</span></a>
+        <a class="btn btn--link" href="#o-nas">Poznaj warsztat</a>
+      </div>
+    </div>
+
+    <div class="hero__visual col-main reveal reveal--late">
+      <div class="scanner" id="scanner" data-locked="false">
+        <div class="scanner__stage">
+          <picture class="scanner__body">
+            <source type="image/avif" srcset="img/car-body-800.avif 800w, img/car-body-1400.avif 1400w, img/car-body-2000.avif 2000w" sizes="(min-width: 900px) 62vw, 100vw">
+            <img src="img/car-body-1400.webp" srcset="img/car-body-800.webp 800w, img/car-body-1400.webp 1400w, img/car-body-2000.webp 2000w" sizes="(min-width: 900px) 62vw, 100vw" width="1748" height="820" alt="Grafitowy samochód osobowy widziany z przodu i z boku, lekko z góry." fetchpriority="high" decoding="async">
+          </picture>
+          <picture class="scanner__xray" aria-hidden="true">
+            <source type="image/avif" srcset="img/car-xray-800.avif 800w, img/car-xray-1400.avif 1400w, img/car-xray-2000.avif 2000w" sizes="(min-width: 900px) 62vw, 100vw">
+            <img src="img/car-xray-1400.webp" srcset="img/car-xray-800.webp 800w, img/car-xray-1400.webp 1400w, img/car-xray-2000.webp 2000w" sizes="(min-width: 900px) 62vw, 100vw" width="1748" height="820" alt="" decoding="async">
+          </picture>
+          <div class="scanner__lens" aria-hidden="true"></div>
+          <ul class="hotspots" aria-label="Podzespoły auta">
+            <li><button class="hotspot hotspot--tl" type="button" data-service="diagnostyka" data-x="38" data-y="43" style="--hx:38%;--hy:43%" data-title="Silnik" data-num="01" data-text="Kontrolka, nierówna praca, dziwny dźwięk. Sprawdzamy, zanim cokolwiek wymieniamy." aria-expanded="false" aria-controls="hotspot-panel"><span class="hotspot__dot"></span><span class="hotspot__label">Silnik</span></button></li>
+            <li><button class="hotspot hotspot--br" type="button" data-service="hamulce" data-x="59.5" data-y="63" style="--hx:59.5%;--hy:63%" data-title="Hamulce" data-num="02" data-text="Pewność przy każdym zatrzymaniu." aria-expanded="false" aria-controls="hotspot-panel"><span class="hotspot__dot"></span><span class="hotspot__label">Hamulce</span></button></li>
+            <li><button class="hotspot hotspot--r" type="button" data-service="zawieszenie" data-x="80.5" data-y="50" style="--hx:80.5%;--hy:50%" data-title="Zawieszenie" data-num="03" data-text="Stuki i luzy mają swoją przyczynę. Znajdujemy ją, zanim rozrośnie się w większą naprawę." aria-expanded="false" aria-controls="hotspot-panel"><span class="hotspot__dot"></span><span class="hotspot__label">Zawieszenie</span></button></li>
+            <li><button class="hotspot hotspot--bl" type="button" data-service="opony" data-x="87" data-y="66" style="--hx:87%;--hy:66%" data-title="Koła" data-num="04" data-text="Opony, wyważenie i geometria. Auto ma jechać prosto." aria-expanded="false" aria-controls="hotspot-panel"><span class="hotspot__dot"></span><span class="hotspot__label">Koła</span></button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="scanner-tabs" role="group" aria-label="Wybierz podzespół">
+        <button type="button" class="chip" data-tab="diagnostyka">Silnik</button>
+        <button type="button" class="chip" data-tab="hamulce">Hamulce</button>
+        <button type="button" class="chip" data-tab="zawieszenie">Zawieszenie</button>
+        <button type="button" class="chip" data-tab="opony">Koła</button>
+      </div>
+      <div class="hotspot-panel" id="hotspot-panel" hidden>
+          <p class="hotspot-panel__num mono" data-role="num">01 / HAMULCE</p>
+          <p class="hotspot-panel__text" data-role="text">Pewność przy każdym zatrzymaniu.</p>
+          <a class="hotspot-panel__link" href="#umow-wizyte" data-ask data-service="hamulce">Zapytaj o tę usługę <span class="arr" aria-hidden="true">↗</span></a>
+          <button class="hotspot-panel__close" type="button" data-scan-back>Wróć do skanowania</button>
+        </div>
+      <p class="scanner__hint mono"><span class="scanner__hint-mouse">Przesuń kursor. Zajrzyj pod maskę.</span><span class="scanner__hint-touch">Dotknij punktu. Zajrzyj pod maskę.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ZASADY ========== -->
+<section class="principles reveal" aria-label="Trzy zasady">
+  <div class="wrap">
+    <ul class="principles__list grid">
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h5M10 17h5"/></svg><span>Wycena przed naprawą.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Kontakt bez niespodzianek.</span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span>Naprawa za twoją zgodą.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== JAK PRACUJEMY / HAMULEC ========== -->
+<section class="process section" id="jak-pracujemy" aria-labelledby="process-title">
+  <div class="wrap">
+    <div class="process__top grid">
+      <div class="process__copy col-copy reveal">
+        <p class="label mono">01 / Jak pracujemy</p>
+        <h2 class="h2" id="process-title">Najpierw przyczyna.<br>Potem naprawa.</h2>
+      </div>
+      <div class="brake col-main" id="brake" style="--p:1" aria-hidden="true">
+        <img class="brake__layer brake__layer--hub" src="img/brake-hub-lg.webp" srcset="img/brake-hub-sm.webp 450w, img/brake-hub-lg.webp 900w" sizes="(min-width: 900px) 22vw, 35vw" width="900" height="940" alt="" loading="lazy" decoding="async">
+        <img class="brake__layer brake__layer--caliper" src="img/brake-caliper-lg.webp" srcset="img/brake-caliper-sm.webp 240w, img/brake-caliper-lg.webp 480w" sizes="(min-width: 900px) 12vw, 19vw" width="480" height="940" alt="" loading="lazy" decoding="async">
+        <img class="brake__layer brake__layer--disc" src="img/brake-disc-lg.webp" srcset="img/brake-disc-sm.webp 190w, img/brake-disc-lg.webp 380w" sizes="(min-width: 900px) 10vw, 15vw" width="380" height="940" alt="" loading="lazy" decoding="async">
+        <img class="brake__layer brake__layer--wheel" src="img/brake-wheel-lg.webp" srcset="img/brake-wheel-sm.webp 400w, img/brake-wheel-lg.webp 800w" sizes="(min-width: 900px) 20vw, 32vw" width="800" height="940" alt="" loading="lazy" decoding="async">
+      </div>
+      <p class="visually-hidden">Ilustracja: rozłożony zespół koła i hamulca — opona z felgą, tarcza, zacisk i kolumna zawieszenia na wspólnej osi.</p>
+    </div>
+    <ol class="steps grid reveal">
+      <li><span class="steps__num mono">01</span><h3>Sprawdzamy</h3><p>Diagnozujemy problem i&nbsp;szukamy jego przyczyny.</p></li>
+      <li><span class="steps__num mono">02</span><h3>Wyceniamy</h3><p>Ustalamy zakres i&nbsp;koszt naprawy.</p></li>
+      <li><span class="steps__num mono">03</span><h3>Naprawiamy</h3><p>Zaczynamy po twojej akceptacji.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========== USŁUGI ========== -->
+<section class="services section" id="uslugi" aria-labelledby="services-title">
+  <div class="wrap grid services__grid">
+    <div class="services__copy col-copy reveal">
+      <p class="label mono">02 / Usługi</p>
+      <h2 class="h2" id="services-title">W czym możemy pomóc?</h2>
+      <figure class="carline" aria-hidden="true">
+        <svg class="carline__svg" viewBox="0 0 600 250" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line class="cl-ground" x1="14" y1="229" x2="586" y2="229" stroke-dasharray="2 6"/>
+          <g class="cl-part cl-zawieszenie">
+            <path d="M150 126v8l12 5-12 5 12 5-12 5 12 5-12 5v6M450 126v8l12 5-12 5 12 5-12 5 12 5-12 5v6"/>
+            <path d="M136 126h28M436 126h28M120 174h60M420 174h60"/>
+          </g>
+          <g class="cl-part cl-diagnostyka">
+            <rect x="62" y="150" width="42" height="36" rx="3"/>
+            <path d="M68 150v-6h30v6M70 160h26M70 168h26M70 176h18M104 168h14"/>
+            <circle cx="96" cy="178" r="2.5"/>
+          </g>
+          <g class="cl-part cl-serwis">
+            <rect x="112" y="196" width="18" height="10" rx="2"/>
+            <path d="M130 201h60c40 0 80 7 120 7h150"/>
+            <rect x="478" y="202" width="56" height="12" rx="6"/>
+            <path d="M534 208h26"/>
+          </g>
+          <g class="cl-part cl-hamulce">
+            <circle cx="150" cy="196" r="17"/><circle cx="150" cy="196" r="6"/>
+            <circle cx="450" cy="196" r="17"/><circle cx="450" cy="196" r="6"/>
+            <path class="cl-caliper" d="M150 179a17 17 0 0 1 14.5 8.5M450 179a17 17 0 0 1 14.5 8.5"/>
+            <circle cx="150" cy="184" r="1.2"/><circle cx="161" cy="190" r="1.2"/><circle cx="139" cy="190" r="1.2"/><circle cx="150" cy="208" r="1.2"/><circle cx="161" cy="202" r="1.2"/><circle cx="139" cy="202" r="1.2"/>
+            <circle cx="450" cy="184" r="1.2"/><circle cx="461" cy="190" r="1.2"/><circle cx="439" cy="190" r="1.2"/><circle cx="450" cy="208" r="1.2"/><circle cx="461" cy="202" r="1.2"/><circle cx="439" cy="202" r="1.2"/>
+          </g>
+          <g class="cl-part cl-opony">
+            <circle cx="150" cy="196" r="32"/><circle cx="150" cy="196" r="25"/>
+            <circle cx="450" cy="196" r="32"/><circle cx="450" cy="196" r="25"/>
+          </g>
+          <g class="cl-body">
+            <path d="M52 196c-8-3-12-10-12-22 0-12 6-20 18-24l18-4c46-8 100-16 156-24l68-46c12-8 26-12 50-12h50c34 0 62 4 82 18l40 26c22 4 36 14 40 30 3 16 0 34-8 48l-6 10h-52a46 46 0 0 0-92 0H196a46 46 0 0 0-92 0z"/>
+            <path d="M240 122l62-44c12-8 26-12 48-12h22v54zM384 66h16c32 0 58 4 76 16l34 26c-16 6-44 10-80 10h-46z"/>
+            <path d="M376 122v66M240 122l6 68M480 118l6 30"/>
+            <path d="M298 142h20M410 140h20" stroke-width="3"/>
+            <path d="M48 156l44-8M46 176h26M556 130l12 4M236 118l-10-6 14-4"/>
+          </g>
+          <g class="cl-dim">
+            <path d="M52 242h514M52 237v10M566 237v10"/>
+            <path d="M150 230v12M450 230v12" stroke-dasharray="2 4"/>
+          </g>
+        </svg>
+        <figcaption class="mono">Sylwetka poglądowa. Kompleksowa obsługa samochodów osobowych.</figcaption>
+      </figure>
+    </div>
+
+    <div class="services__list col-main reveal">
+      <details class="acc" name="uslugi" id="svc-diagnostyka" data-service="diagnostyka">
+        <summary class="acc__summary"><span class="acc__num mono">01</span><span class="acc__title">Diagnostyka</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Świeci kontrolka albo auto zachowuje się inaczej? Sprawdzimy przyczynę.</p><a class="acc__link" href="#umow-wizyte" data-ask data-service="diagnostyka">Zapytaj o tę usługę <span class="arr" aria-hidden="true">↗</span></a></div></div>
+      </details>
+      <details class="acc" name="uslugi" id="svc-hamulce" data-service="hamulce" open>
+        <summary class="acc__summary"><span class="acc__num mono">02</span><span class="acc__title">Hamulce</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Sprawdzimy tarcze, klocki i&nbsp;pozostałe elementy układu hamulcowego.</p><a class="acc__link" href="#umow-wizyte" data-ask data-service="hamulce">Zapytaj o tę usługę <span class="arr" aria-hidden="true">↗</span></a></div></div>
+      </details>
+      <details class="acc" name="uslugi" id="svc-zawieszenie" data-service="zawieszenie">
+        <summary class="acc__summary"><span class="acc__num mono">03</span><span class="acc__title">Zawieszenie</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Stuki, luzy, nierówne prowadzenie. Zaczynamy od sprawdzenia.</p><a class="acc__link" href="#umow-wizyte" data-ask data-service="zawieszenie">Zapytaj o tę usługę <span class="arr" aria-hidden="true">↗</span></a></div></div>
+      </details>
+      <details class="acc" name="uslugi" id="svc-opony" data-service="opony">
+        <summary class="acc__summary"><span class="acc__num mono">04</span><span class="acc__title">Opony i&nbsp;geometria</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Wymiana opon i&nbsp;kontrola ustawienia kół.</p><a class="acc__link" href="#umow-wizyte" data-ask data-service="opony">Zapytaj o tę usługę <span class="arr" aria-hidden="true">↗</span></a></div></div>
+      </details>
+      <details class="acc" name="uslugi" id="svc-serwis" data-service="serwis">
+        <summary class="acc__summary"><span class="acc__num mono">05</span><span class="acc__title">Serwis okresowy</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Olej, filtry i&nbsp;przegląd zgodny z&nbsp;potrzebami twojego auta.</p><a class="acc__link" href="#umow-wizyte" data-ask data-service="serwis">Zapytaj o tę usługę <span class="arr" aria-hidden="true">↗</span></a></div></div>
+      </details>
+      <p class="services__note">Zakres przykładowy, do potwierdzenia przez warsztat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== O WARSZTACIE ========== -->
+<section class="about section" id="o-nas" aria-labelledby="about-title">
+  <div class="wrap grid about__grid">
+    <figure class="about__photo col-copy reveal">
+      <picture>
+        <source type="image/avif" srcset="img/workshop-800.avif 800w, img/workshop-1400.avif 1400w, img/workshop-2000.avif 2000w" sizes="(min-width: 900px) 58vw, 100vw">
+        <img src="img/workshop-1400.webp" srcset="img/workshop-800.webp 800w, img/workshop-1400.webp 1400w, img/workshop-2000.webp 2000w" sizes="(min-width: 900px) 58vw, 100vw" width="2496" height="1560" alt="Dwóch mechaników w roboczych kombinezonach sprawdza silnik auta z otwartą maską w hali warsztatu." loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="mono">Zdjęcie poglądowe</figcaption>
+    </figure>
+    <div class="about__copy col-main reveal">
+      <p class="label mono">03 / O nas</p>
+      <h2 class="h2" id="about-title">Za tą stroną stoją ludzie.</h2>
+      <p class="lead">Rozmawiamy normalnie. Pokazujemy, co wymaga naprawy. Ustalamy zakres przed rozpoczęciem pracy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OPINIE ========== -->
+<section class="reviews section" id="opinie" aria-labelledby="reviews-title">
+  <div class="wrap grid reviews__grid">
+    <div class="reviews__copy col-copy reveal">
+      <p class="label mono">04 / Opinie</p>
+      <h2 class="h2" id="reviews-title">Dobra robota wraca w&nbsp;opiniach.</h2>
+    </div>
+    <ul class="reviews__list col-main reveal">
+      <li class="review"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><p>Miejsce na zweryfikowaną opinię klienta.</p><span class="review__meta mono">Cytat, podpis i źródło do uzupełnienia</span></li>
+      <li class="review"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><p>Miejsce na zweryfikowaną opinię klienta.</p><span class="review__meta mono">Cytat, podpis i źródło do uzupełnienia</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== FORMULARZ ========== -->
+<section class="contact-form section section--dark" id="umow-wizyte" aria-labelledby="form-title">
+  <div class="contact-form__bg" aria-hidden="true"></div>
+  <div class="wrap grid contact-form__grid">
+    <div class="contact-form__copy col-copy reveal">
+      <p class="label mono label--accent">Umów wizytę</p>
+      <h2 class="h2" id="form-title">Coś nie gra?<br>Zacznijmy od rozmowy.</h2>
+      <p class="lead">Opisz objaw. Oddzwonimy i&nbsp;ustalimy termin.</p>
+    </div>
+    <form class="form col-main reveal" id="contact" action="#umow-wizyte" method="get" aria-describedby="form-note">
+      <fieldset class="form__topics">
+        <legend class="form__label">Z czym przyjeżdżasz?</legend>
+        <div class="chips">
+          <label class="chip chip--radio"><input type="radio" name="temat" value="Coś stuka"><span>Coś stuka</span></label>
+          <label class="chip chip--radio"><input type="radio" name="temat" value="Kontrolka"><span>Kontrolka</span></label>
+          <label class="chip chip--radio"><input type="radio" name="temat" value="Przegląd"><span>Przegląd</span></label>
+          <label class="chip chip--radio"><input type="radio" name="temat" value="Inna sprawa"><span>Inna sprawa</span></label>
+        </div>
+      </fieldset>
+
+      <div class="form__pair">
+      <div class="form__row">
+        <label class="form__label" for="f-name">Imię <span class="req" aria-hidden="true">*</span></label>
+        <input class="input" id="f-name" name="imie" type="text" autocomplete="given-name" required aria-describedby="f-name-err">
+        <p class="form__error" id="f-name-err" hidden>Podaj imię, żebyśmy wiedzieli, do kogo dzwonimy.</p>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="f-phone">Telefon <span class="req" aria-hidden="true">*</span></label>
+        <input class="input" id="f-phone" name="telefon" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="f-phone-err" placeholder="np. +48 600 000 000">
+        <p class="form__error" id="f-phone-err" hidden>Podaj numer telefonu, żebyśmy mogli oddzwonić.</p>
+      </div>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="f-car">Marka i model</label>
+        <input class="input" id="f-car" name="auto" type="text" autocomplete="off">
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="f-msg">Co się dzieje?</label>
+        <textarea class="input" id="f-msg" name="opis" rows="4"></textarea>
+      </div>
+      <div class="form__row" id="f-service-row" hidden>
+        <label class="form__label" for="f-service">Wybrana usługa</label>
+        <select class="input" id="f-service" name="usluga">
+          <option value="">Bez wskazania</option>
+          <option value="diagnostyka">Diagnostyka</option>
+          <option value="hamulce">Hamulce</option>
+          <option value="zawieszenie">Zawieszenie</option>
+          <option value="opony">Opony i geometria</option>
+          <option value="serwis">Serwis okresowy</option>
+        </select>
+      </div>
+
+      <button class="btn btn--primary btn--block" type="submit" id="f-submit"><span data-role="label">Poproś o kontakt</span> <span class="arr" aria-hidden="true">↗</span></button>
+      <p class="form__status" id="f-status" role="status" aria-live="polite"></p>
+      <p class="form__note" id="form-note"><strong>Termin potwierdzimy telefonicznie.</strong> Dane z formularza służą tylko do obsługi zgłoszenia. <a href="#prywatnosc">Polityka prywatności</a>.</p>
+      <p class="form__nojs">Formularz w tym prototypie jest demonstracyjny. Jeśli nie działa, zadzwoń — numer znajdziesz w <a href="#kontakt">sekcji Kontakt</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="faq section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap grid faq__grid">
+    <div class="faq__copy col-copy reveal">
+      <p class="label mono">05 / FAQ</p>
+      <h2 class="h2" id="faq-title">Dobre pytania przed wizytą.</h2>
+    </div>
+    <div class="faq__list col-main reveal">
+      <details class="acc acc--faq" open>
+        <summary class="acc__summary"><span class="acc__title">Czy zadzwonicie przed naprawą?</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Tak. Najpierw uzgadniamy zakres i&nbsp;koszt. Jeśli podczas pracy pojawi się coś dodatkowego, kontaktujemy się przed rozszerzeniem naprawy.</p></div></div>
+      </details>
+      <details class="acc acc--faq">
+        <summary class="acc__summary"><span class="acc__title">Czy mogę zostawić auto rano?</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>Ustalmy to podczas umawiania wizyty. Potwierdzimy godzinę i&nbsp;sposób przekazania auta.</p></div></div>
+      </details>
+      <details class="acc acc--faq">
+        <summary class="acc__summary"><span class="acc__title">Ile potrwa diagnoza?</span><span class="acc__icon" aria-hidden="true"></span></summary>
+        <div class="acc__body"><div class="acc__inner"><p>To zależy od objawu i&nbsp;zakresu sprawdzenia. Przewidywany czas omówimy przy przyjęciu auta.</p></div></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== KONTAKT ========== -->
+<section class="contact section" id="kontakt" aria-labelledby="contact-title">
+  <div class="wrap grid contact__grid">
+    <div class="contact__copy col-copy reveal">
+      <p class="label mono">06 / Kontakt</p>
+      <h2 class="h2" id="contact-title">Po drodze do sprawnego auta.</h2>
+      <ul class="contact__list">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg><div><strong>Wrocław</strong></div></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11z"/><path d="M10 20v-6h4v6"/></svg><div><strong>Adres warsztatu</strong><span class="placeholder">[adres warsztatu]</span></div></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><strong>Telefon</strong><span class="placeholder">[telefon] — po uzupełnieniu numer będzie klikalny</span></div></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Godziny otwarcia</strong><span class="placeholder">[godziny otwarcia]</span></div></li>
+      </ul>
+    </div>
+    <div class="map col-main reveal">
+      <svg class="map__svg" viewBox="0 0 640 440" aria-hidden="true">
+        <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#E6E5E0" stroke-width="1"/></pattern></defs>
+        <rect width="640" height="440" fill="#FBFBF9"/>
+        <rect width="640" height="440" fill="url(#grid)"/>
+        <path d="M-10 300c80-40 140-30 200-70s90-90 160-110 120-10 300-40" fill="none" stroke="#DCE6EA" stroke-width="26" stroke-linecap="round"/>
+        <path d="M-10 300c80-40 140-30 200-70s90-90 160-110 120-10 300-40" fill="none" stroke="#EAF1F3" stroke-width="12" stroke-linecap="round"/>
+        <g fill="none" stroke="#E2E1DB" stroke-width="6" stroke-linecap="round"><path d="M60-10L120 440M-10 120L650 200M-10 380L650 280M400-10L340 440M240 440L520-10"/></g>
+        <g fill="none" stroke="#EDECE6" stroke-width="3"><path d="M-10 60L650 90M-10 220L650 330M180-10L140 440M520-10L560 440"/></g>
+        <g class="map__labels" fill="#8A8B86" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" letter-spacing="1.5"><text x="470" y="80">PSIE POLE</text><text x="70" y="210">FABRYCZNA</text><text x="300" y="300">ŚRÓDMIEŚCIE</text><text x="380" y="400">KRZYKI</text></g>
+        <g transform="translate(330 205)"><path d="M0 22S-14 8-14-2a14 14 0 0 1 28 0C14 8 0 22 0 22z" fill="#FF650A"/><circle cy="-2" r="5" fill="#fff"/></g>
+        <text x="356" y="216" fill="#202120" font-size="18" font-weight="700" font-family="Inter, system-ui, sans-serif">Wrocław</text>
+      </svg>
+      <span class="map__badge mono">Mapa poglądowa</span>
+      <a class="btn btn--ghost map__cta" href="https://www.google.com/maps/search/?api=1&query=Wroc%C5%82aw" target="_blank" rel="noopener">Wyznacz trasę <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="prywatnosc">
+  <div class="wrap site-footer__inner">
+    <a class="brand" href="#top" aria-label="WARSZTAT Wrocław — do góry">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#FF650A" d="M4 4h9l7 12-7 12H4l7-12z"/><path fill="#FF650A" opacity=".72" d="M17 4h9l-7 12 7 12h-9l7-12z"/></svg>
+      <span class="brand__text"><span class="brand__name">WARSZTAT</span><span class="brand__city">WROCŁAW</span></span>
+    </a>
+    <ul class="site-footer__links">
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#prywatnosc">Prywatność</a></li>
+    </ul>
+    <p class="site-footer__meta mono">[nazwa podmiotu prowadzącego warsztat] · Projekt koncepcyjny</p>
+  </div>
+  <div class="wrap"><p class="site-footer__privacy">Prywatność: prototyp nie zapisuje ani nie wysyła danych z formularza. W docelowym wdrożeniu dane służą wyłącznie do obsługi zgłoszenia, bez zapisu do marketingu.</p></div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
